@@ -91,10 +91,10 @@
 <meta name="keywords">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo博客搭建教程">
-<meta property="og:url" content="https://wenyouyan.github.io/2017/04/06/hello-world/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/04/06/Hexo博客搭建教程/index.html">
 <meta property="og:site_name" content="菊花禅">
 <meta property="og:description" content="Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 准备 你需要准备好以下软件,根据自己的Windows版本选择相应的安装文件哦. 下载Node.js安装文件：Node.js环境,保持默认设置即可，一路Next，安装很快就结束了。 Git环境,打开Git命令行，执行如下命令:1$ npm install">
-<meta property="og:updated_time" content="2017-04-10T05:00:54.871Z">
+<meta property="og:updated_time" content="2017-04-10T13:06:20.919Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客搭建教程">
 <meta name="twitter:description" content="Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 准备 你需要准备好以下软件,根据自己的Windows版本选择相应的安装文件哦. 下载Node.js安装文件：Node.js环境,保持默认设置即可，一路Next，安装很快就结束了。 Git环境,打开Git命令行，执行如下命令:1$ npm install">
@@ -106,7 +106,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -125,7 +125,7 @@
 
 
 
-  <link rel="canonical" href="https://wenyouyan.github.io/2017/04/06/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/06/Hexo博客搭建教程/"/>
 
 
 
@@ -270,7 +270,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://wenyouyan.github.io/2017/04/06/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/06/Hexo博客搭建教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="youyan Wen">
@@ -364,9 +364,9 @@
 <h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><p>部署到Github前需要配置_config.yml文件，首先找到下面的内容</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Deployment</span></div><div class="line"><span class="comment">## Docs: http://hexo.io/docs/deployment.html</span></div><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>:</div></pre></td></tr></table></figure>
 <p>然后将它们修改为<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Deployment</span></div><div class="line"><span class="comment">## Docs: http://hexo.io/docs/deployment.html</span></div><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: github</div><div class="line">  repository: git@github.com:zhchnchn/zhchnchn.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>Repository：必须是SSH形式的url（git@github.com:zhchnchn/zhchnchn.github.io.git），而不能是HTTPS形式的url（<a href="https://github.com/zhchnchn/zhchnchn.github.io.git），否则会出现错误：" target="_blank" rel="external">https://github.com/zhchnchn/zhchnchn.github.io.git），否则会出现错误：</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div><div class="line">[info] Start deploying: github</div><div class="line">[error] https://github.com/zhchnchn/zhchnchn.github.io is not a valid repositor URL!</div></pre></td></tr></table></figure></p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>Repository：必须是SSH形式的url（git@github.com:wenyouyan/wenyouyan.github.io.git），而不能是HTTPS形式的url（<a href="https://github.com/wenyouyan/wenyouyan.github.io.git），否则会出现错误：" target="_blank" rel="external">https://github.com/wenyouyan/wenyouyan.github.io.git），否则会出现错误：</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div><div class="line">[info] Start deploying: github</div><div class="line">[error] https://github.com/wenyouyan/wenyouyan.github.io is not a valid repositor URL!</div></pre></td></tr></table></figure></p>
 <p>使用SSH url，如果电脑没有开放SSH 端口，会致部署失败。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">fatal: Could not <span class="built_in">read</span> from remote repository.</div><div class="line">Please make sure you have the correct access rights</div><div class="line">and the repository exists.</div></pre></td></tr></table></figure></p>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>当部署完成后，在浏览器中打开<a href="https://wenyouyan.github.io/">http://wenyouyan.github.io/</a> ，正常显示网页，表明部署成功。</p>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>当部署完成后，在浏览器中打开<a href="https://wenyouyan.github.io/" target="_blank" rel="external">http://wenyouyan.github.io/</a> ，正常显示网页，表明部署成功。</p>
 
       
     </div>
@@ -403,8 +403,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/09/hexo/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2017/04/09/title HTML常用手册网站/" rel="next" title="HTML常用手册网站">
+                <i class="fa fa-chevron-left"></i> HTML常用手册网站
               </a>
             
           </div>
