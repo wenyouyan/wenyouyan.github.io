@@ -1692,7 +1692,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f5935d;
+  background: #ad41b6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2882,4 +2882,7 @@ img {
 }
 p.site-subtitle {
   top: -10px;
+}
+.content-wrap {
+  background: #f5f7f9;
 }
